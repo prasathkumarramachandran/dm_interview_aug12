@@ -46,3 +46,12 @@ And while collecting data if the passed value for temperature is beyond the min 
 Solution should support such a collection of data at huge volumes
 
 Plant, Resource, Order -- make an external API call for validation.
+
+### Resource JSON 
+
+```json
+{
+  "resourceId": "MIXING",
+  "resourceName": "Mixing Machine"
+}
+```
