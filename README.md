@@ -55,3 +55,52 @@ Plant, Resource, Order -- make an external API call for validation.
   "resourceName": "Mixing Machine"
 }
 ```
+
+### Order JSON Object
+```json
+{
+  "orderId": "ORDER123",
+  "orderQuantity": 100,
+  "productName": "Ice Cream"
+}
+
+```
+
+### Temprature JSON Object
+```json
+{
+  "resourceId": "FREEZING",
+  "order": {
+    "orderId": "ORDER123",
+    "orderQuantity": 100,
+    "productName": "Ice Cream"
+  },
+  "parameter": {
+    "key": "TEMPERATURE",
+    "value": -5,
+    "minValue": -15,
+    "maxValue": -5
+  }
+}
+```
+### Event JSON Object (Raised when Temperature Value Exceeds Limits):
+```json
+{
+  "resourceId": "FREEZING",
+  "order": {
+    "orderId": "ORDER123",
+    "orderQuantity": 100,
+    "productName": "Ice Cream"
+  },
+  "parameter": {
+    "key": "TEMPERATURE",
+    "value": -20,
+    "minValue": -15,
+    "maxValue": -5
+  },
+  "event": {
+    "eventType": "OUT_OF_RANGE",
+    "description": "Temperature value is below minimum limit"
+  }
+}
+```
