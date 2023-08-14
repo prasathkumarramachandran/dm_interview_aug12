@@ -135,4 +135,4 @@ The React user interface will communicate with the backend microservices to retr
 This communication will be carried out through RESTful API calls.
 
 ### Next Steps: 
-If the performance of the user interface is not up to the required standard, consider optimizing the UI components, utilizing server-side rendering, implementing caching mechanisms, and distributing the application across multiple servers or CDNs. Additionally, you may explore optimizing the backend API calls to reduce response times and ensure smooth communication between the UI and the backend services.
+If the performance of the user interface is not up to the required standard, consider optimizing the UI components, utilizing server-side rendering, implementing caching mechanisms. You may explore optimizing the backend API calls to reduce response times and ensure smooth communication between the UI and the backend services.
