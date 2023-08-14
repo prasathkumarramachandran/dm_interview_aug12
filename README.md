@@ -104,3 +104,35 @@ Plant, Resource, Order -- make an external API call for validation.
   }
 }
 ```
+
+## User Interface Requirement 
+
+The ice cream manufacturing company now requires a user interface to interact with the data collection process and monitor the manufacturing steps in real-time. 
+The user interface will be developed using React.js and will provide a dashboard for the plant manager and operators to visualize and manage the data collection and manufacturing process.
+
+### Dashboard Overview: 
+The dashboard will provide an overview of the ongoing manufacturing process, including the status of mixing, freezing, and packing for each order.
+
+### Real-time Temperature Display: 
+A real-time temperature display will be integrated into the dashboard to show the temperature data collected from the FREEZING resource. 
+The temperature display should update at a high frequency to reflect the most recent temperature readings.
+
+### Order Management: 
+The user interface will allow the plant manager to view the orders placed, their quantities, and the current status of each order in terms of the manufacturing steps.
+
+### Parameter Configuration: 
+The interface will provide a configuration panel to set the minimum and maximum values for the temperature parameter for each resource (e.g., FREEZING). 
+Any temperature readings that fall outside these limits will trigger an event, as described in the previous problem statement.
+
+### Event Monitoring: 
+The dashboard should display events that are raised when parameter values exceed the configured limits. These events should be clearly visible to the operators for immediate attention.
+
+### Validation Feedback: 
+The interface should provide feedback to the user regarding the validation status of the plant, resource, and order. If any of these entities fail validation, appropriate messages should be displayed.
+
+### Integration with Backend: 
+The React user interface will communicate with the backend microservices to retrieve manufacturing process data, order information, temperature readings, and configuration settings.
+This communication will be carried out through RESTful API calls.
+
+### Next Steps: 
+If the performance of the user interface is not up to the required standard, consider optimizing the UI components, utilizing server-side rendering, implementing caching mechanisms, and distributing the application across multiple servers or CDNs. Additionally, you may explore optimizing the backend API calls to reduce response times and ensure smooth communication between the UI and the backend services.
